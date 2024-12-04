@@ -11,12 +11,18 @@
     --accent-color: #fff000;
     --white-color: #fff;
     --black-color: #000;
-    --transition: 3s ease linear;
+    --transition: all 0.3s ease-in-out;
     --border: 2px solid var(--accent-color);
+    --border-primary: 2px solid var(--primary-color);
 }
 
 body {
     background-color: var(--white-color);
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 
@@ -27,6 +33,10 @@ body {
 
 .border {
     border: var(--border);
+}
+
+.pri-Border {
+    border: var(--border-primary);
 }
 
 /* Width */

@@ -3,6 +3,7 @@
 .HeaderTopWrapper {
     height: 40px;
     background-color: var(--primary-color);
+    position: relative;
 }
 
 .HeaderTop {
@@ -30,11 +31,11 @@
 
 .SocialMediaSvg {
     color: var(--white-color);
-    fill: var(--white-color);
+    transition: var(--transition);
 }
 
-.SocialMediaSvgNotFill {
-    color: var(--white-color);
+.SocialMediaSvg:hover {
+    color: var(--accent-color);
 }
 
 .PhoneSVG,
@@ -54,6 +55,7 @@
 
 .HeaderNevigation {
     height: 80px;
+    position: relative;
 }
 
 .HeaderNevigationLogoImage {
@@ -63,10 +65,41 @@
 .ChevronDownSVG {
     stroke: var(--primary-color);
     fill: var(--primary-color);
+    transition: var(--transition);
 }
 
-.HeaderNevigationListItem {
+.HeaderNevigationListItem,
+.SubMenuListItem {
     list-style: none;
+    position: relative;
+}
+
+.SubMenu {
+    position: absolute;
+    margin-left: 50px;
+    z-index: 1;
+    display: none;
+}
+
+.SubMenuListItem {
+    padding: 5px 20px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.SubMenuListItemLink {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 18px;
+    transition: var(--transition);
+}
+
+.SubMenuListItem:hover {
+    background-color: var(--accent-color);
+}
+
+.SubMenuListItem:hover .SubMenuListItemLink {
+    color: var(--primary-color);
 }
 
 .HeaderNevigationLink {
@@ -78,6 +111,19 @@
 
 .HeaderNevigationLink:hover {
     color: var(--accent-color);
+}
+
+.HeaderNevigationLink:hover .ChevronDownSVG {
+    stroke: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+.HeaderNevigationListItem:hover .SubMenu {
+    display: block;
+}
+
+.HeaderNevigationListItem:hover .ChevronDownSVG {
+    transform: rotate(180deg);
 }
 
 .IconWrapper {
@@ -100,4 +146,108 @@
     background-color: var(--primary-color);
     color: var(--white-color);
     font-size: 13px;
+}
+
+/* Hero Section */
+
+.HeroSectionWrapper {
+    position: relative;
+    height: 500px;
+    background-color: var(--primary-color);
+    margin-top: 80px;
+}
+
+.HeroSection {
+    grid-template-columns: repeat(2, 50%);
+    gap: 50px;
+}
+
+.HeroText {
+    flex: 1;
+}
+
+.HeroTextHeading {
+    color: var(--white-color);
+    font-size: 50px;
+}
+
+.HeroTextParagraph {
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+.ExploreMoreWrapper {
+    height: 40px;
+    width: 150px;
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.ExploreMoreWrapper:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.HeroImages {
+    flex: 1;
+}
+
+.HeroImages {
+    height: 400px;
+    width: 400px;
+}
+
+.HeroImagesImages {
+    height: 400px;
+    width: 400px;
+}
+
+/* Bestsellers */
+
+.BestSellerHeading {
+    color: var(--primary-color);
+    font-size: 40px;
+    text-align: center;
+}
+
+.BestSellerWrapper {
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.BestSellerItem {
+    height: 500px;
+    padding: 10px;
+    border-radius: 13px;
+    transition: var(--transition);
+}
+
+.BestSellerItem:hover {
+    transform: translateY(-15px);
+}
+
+.BestSellerItemLink {
+    text-decoration: none;
+}
+
+.BestSellerItemImage {
+    height: auto;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.ProductImage {
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.BestSellerTag {
+    color: var(--secondary-color);
+    font-size: 18px;
 }

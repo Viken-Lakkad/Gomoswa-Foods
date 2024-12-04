@@ -6,8 +6,15 @@
     <title>Gomoswa Foods</title>
     <link rel="stylesheet" href="./custom.css" />
     <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
+    <!-- Header -->
     <header class="HeaderTopWrapper">
       <!-- Header Top -->
       <div class="d-grid HeaderTop container">
@@ -31,7 +38,7 @@
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="0.75"
+                stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 class="lucide lucide-facebook SocialMediaSvg"
@@ -58,7 +65,7 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-instagram SocialMediaSvgNotFill"
+                class="lucide lucide-instagram SocialMediaSvg"
               >
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
@@ -81,7 +88,7 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-youtube SocialMediaSvgNotFill"
+                class="lucide lucide-youtube SocialMediaSvg"
               >
                 <path
                   d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
@@ -144,7 +151,7 @@
       </div>
       <!-- Nevigation Bar -->
       <nav
-        class="HeaderNevigation border container d-flex align-items-center justify-content-between"
+        class="HeaderNevigation container d-flex align-items-center justify-content-between"
       >
         <!-- Logo -->
 
@@ -182,6 +189,18 @@
               >
                 <path d="m6 9 6 6 6-6" /></svg
             ></a>
+
+            <ul class="SubMenu">
+              <li class="SubMenuListItem">
+                <a href="#" class="SubMenuListItemLink"> Ghee </a>
+              </li>
+              <li class="SubMenuListItem">
+                <a href="#" class="SubMenuListItemLink"> Sweets </a>
+              </li>
+              <li class="SubMenuListItem">
+                <a href="#" class="SubMenuListItemLink"> Honey </a>
+              </li>
+            </ul>
           </li>
           <li class="HeaderNevigationListItem">
             <a href="#" class="HeaderNevigationLink"> Contact </a>
@@ -252,5 +271,73 @@
         </div>
       </nav>
     </header>
+
+    <!-- Heor Section -->
+
+    <main class="HeroSectionWrapper d-flex align-items-center">
+      <div class="container HeroSection d-flex align-items-center">
+        <div class="HeroText">
+          <h1 class="HeroTextHeading w-80">
+            Golden Trio: Ghee, Honey & Sweets
+          </h1>
+          <p class="HeroTextParagraph w-85 mt-25">
+            Experience the perfect blend of richness, natural sweetness, and
+            pure delight. Crafted with care, our trio brings authentic flavors
+            and timeless indulgence to every moment.
+          </p>
+
+          <div class="mt-25">
+            <a
+              href="#"
+              class="ExploreMoreWrapper d-flex justify-content-center align-items-center"
+            >
+              Explore More
+            </a>
+          </div>
+        </div>
+        <div class="border HeroImages">
+          <div class="HeroImagesWrapper w-80">
+            <img
+              src="./Images/yellow-ghee-front.png"
+              alt="Hero Images"
+              class="HeroImages"
+            />
+          </div>
+          <div class="HeroButtonWrapper broder w-20"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Best Seller -->
+
+    <section class="container mt-50">
+      <h1 class="BestSellerHeading">Best Seller</h1>
+      <div class="BestSellerWrapper mt-50 broder container d-grid">
+        <div class="BestSellerItem pri-Border">
+          <a href="#" class="BestSellerItemLink">
+            <div class="BestSellerItemImage">
+              <img
+                src="./Images/Product 1.jpeg"
+                alt="Product"
+                class="w-100 ProductImage"
+              />
+            </div>
+            <div class="BestSellerItemText border">
+              <span class="BestSellerTag mt-5">Sweets</span>
+              <!-- Order Button -->
+              <a
+                href="#"
+                class="ExploreMoreWrapper mt-5 d-flex align-items-center justify-content-center"
+              >
+                Order Now
+              </a>
+            </div>
+          </a>
+        </div>
+        <div class="BestSellerItem border"></div>
+        <div class="BestSellerItem border"></div>
+        <div class="BestSellerItem border"></div>
+      </div>
+    </section>
   </body>
 </html>
