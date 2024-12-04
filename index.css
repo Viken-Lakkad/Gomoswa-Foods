@@ -1,0 +1,103 @@
+/* Header Top */
+
+.HeaderTopWrapper {
+    height: 40px;
+    background-color: var(--primary-color);
+}
+
+.HeaderTop {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 500px;
+}
+
+.HeaderTopLeft,
+.HeaderTopRight {
+    height: 40px;
+    grid-template-columns: repeat(2, 50%);
+    align-content: center;
+}
+
+.HeaderTopLeftText {
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+.SocialMediaLink {
+    text-decoration: none;
+    height: 25px;
+    width: 25px;
+}
+
+.SocialMediaSvg {
+    color: var(--white-color);
+    fill: var(--white-color);
+}
+
+.SocialMediaSvgNotFill {
+    color: var(--white-color);
+}
+
+.PhoneSVG,
+.EmailSVG {
+    stroke: var(--primary-color);
+    fill: var(--white-color);
+}
+
+.HeaderTopRightPhoneText,
+.HeaderTopRightEmailText {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Nevigation Bar */
+
+.HeaderNevigation {
+    height: 80px;
+}
+
+.HeaderNevigationLogoImage {
+    height: 50px;
+}
+
+.ChevronDownSVG {
+    stroke: var(--primary-color);
+    fill: var(--primary-color);
+}
+
+.HeaderNevigationListItem {
+    list-style: none;
+}
+
+.HeaderNevigationLink {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 18px;
+    transition: var(--transition);
+}
+
+.HeaderNevigationLink:hover {
+    color: var(--accent-color);
+}
+
+.IconWrapper {
+    height: 25px;
+    width: 25px;
+}
+
+.SearchSVG {
+    stroke: var(--primary-color);
+    position: relative;
+}
+
+.CartCount {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-top: -45px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 13px;
+}
