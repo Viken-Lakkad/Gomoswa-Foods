@@ -471,3 +471,75 @@
     object-fit: cover;
     border-radius: 13px;
 }
+
+/* Location Section */
+
+.LocationSectionWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+.LocationImageWrapper {
+    height: 400px;
+}
+
+.LocationImage {
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 60px;
+}
+
+.LocationTextHeading {
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+.LocationTextParagraph {
+    color: var(--primary-color);
+    font-size: 18px;
+    display: block;
+}
+
+.LocationTextSubHeading {
+    color: var(--primary-color);
+    font-size: 24px;
+    display: block;
+    font-weight: 600;
+}
+
+.Location {
+    height: 30px;
+    width: 100px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    color: var(--white-color);
+}
+
+.Location:focus {
+    outline: none;
+}
+
+.LocationCountainerWrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    position: absolute;
+    background-color: var(--white-color);
+    z-index: 1;
+    height: 90px;
+    bottom: 0;
+    transform: translateX(48%);
+    border-top-left-radius: 8px;
+}
+
+.LocationCountainer:not(:last-child) {
+    border-right: 2px solid var(--primary-color);
+}
+
+.LocationCount {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.LocationCountText {
+    font-size: 20px;
+}
