@@ -543,3 +543,153 @@
 .LocationCountText {
     font-size: 20px;
 }
+
+/* Testimonial Section */
+
+.TestimonialWrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.TestimonialItem {
+    height: 250px;
+    border-radius: 8px;
+    padding: 10px;
+    transition: var(--transition);
+    border: 3px solid var(--primary-color);
+}
+
+.lucide-star-filled {
+    height: 18px;
+    width: 18px;
+    stroke: var(--primary-color);
+    fill: var(--primary-color);
+}
+
+.TestimonialParagraph {
+    color: var(--primary-color);
+    font-size: 18px;
+    display: block;
+}
+
+/* Newsletter */
+
+.NewsLetterWrapper {
+    height: 100px;
+    background-color: var(--accent-color);
+}
+
+.NewsLetterHeading {
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+.NewsLetterSpan {
+    color: red;
+    font-weight: 800;
+}
+
+.NewsLetterInput {
+    height: 50px;
+    width: 400px;
+    border-radius: 8px;
+    border: none;
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+.NewsLetterButton {
+    height: 50px;
+    width: 150px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+/* Footer */
+
+.FooterWrapper {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    background-color: var(--white-color);
+}
+
+.FooterLogo {
+    width: 250px;
+    object-fit: contain;
+}
+
+
+.FooterHeading {
+    color: var(--primary-color);
+    font-size: 34px;
+    display: block;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.FooterProductsListItem {
+    list-style: none;
+}
+
+.FooterLink {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 200;
+    transition: var(--transition);
+}
+
+.FooterLink:hover {
+    color: var(--primary-color);
+}
+
+.SocialMediaLink {
+    text-decoration: none;
+}
+
+.lucide-facebook1,
+.lucide-instagram1,
+.lucide-youtube1 {
+    color: var(--secondary-color);
+    height: 30px;
+    width: 40px;
+    transition: var(--transition);
+}
+
+
+.SocialMediaLink:hover .lucide-facebook1,
+.SocialMediaLink:hover .lucide-instagram1,
+.SocialMediaLink:hover .lucide-youtube1 {
+    color: var(--primary-color);
+}
+
+.FooterSocialText {
+    color: var(--secondary-color);
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.FooterBottom {
+    height: 40px;
+    background-color: var(--primary-color);
+}
+
+.FooterBottomText {
+    color: var(--white-color);
+    font-size: 18px;
+    display: block;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 10px;
+}
