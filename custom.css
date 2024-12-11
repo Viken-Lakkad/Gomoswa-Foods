@@ -1,3 +1,7 @@
+/* Font Fameli */
+
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +9,9 @@
 }
 
 :root {
-    --primary-color: #742C84;
-    --secondary-color: #A471AB;
-    --backeground-color: #A471AB;
+    --primary-color: #742c84;
+    --secondary-color: #a471ab;
+    --backeground-color: #a471ab;
     --accent-color: #fff000;
     --white-color: #fff;
     --black-color: #000;
@@ -18,13 +22,19 @@
 
 body {
     background-color: #f8f4f6;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
 }
 
 ::selection {
     background-color: var(--primary-color);
     color: var(--accent-color);
 }
-
 
 .container {
     max-width: 1440px;

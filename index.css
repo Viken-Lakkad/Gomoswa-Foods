@@ -20,7 +20,7 @@
 
 .HeaderTopLeftText {
     color: var(--white-color);
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .SocialMediaLink {
@@ -48,7 +48,7 @@
 .HeaderTopRightEmailText {
     color: var(--white-color);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 /* Nevigation Bar */
@@ -124,6 +124,7 @@
 
 .HeaderNevigationListItem:hover .SubMenu {
     display: block;
+    z-index: 100;
 }
 
 .HeaderNevigationListItem:hover .ChevronDownSVG {
@@ -142,11 +143,11 @@
 
 .CartCount {
     position: absolute;
-    height: 20px;
-    width: 20px;
-    margin-top: -45px;
+    height: 15px;
+    width: 15px;
+    margin-top: -35px;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 13px;
     background-color: var(--primary-color);
     color: var(--white-color);
     font-size: 13px;
@@ -162,7 +163,7 @@
 }
 
 .HeroSection {
-    grid-template-columns: repeat(2, 50%);
+    margin-top: 3%;
     gap: 50px;
 }
 
@@ -172,7 +173,7 @@
 
 .HeroTextHeading {
     color: var(--white-color);
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .HeroTextParagraph {
@@ -211,6 +212,17 @@
     width: 400px;
 }
 
+.HeroImages_Images {
+    height: 400px;
+}
+
+/* Product Cetegory */
+
+.ProductCategoryWrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
 /* Bestsellers */
 
 .BestSellerHeading {
@@ -220,7 +232,6 @@
 }
 
 .BestSellerWrapper {
-
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
@@ -241,7 +252,7 @@
 }
 
 .BestSellerItemImage {
-    height: auto;
+    height: 320px;
     object-fit: cover;
     border-radius: 13px;
     background-color: var(--primary-color);
@@ -254,13 +265,13 @@
 
 .BestSellerTag {
     color: var(--secondary-color);
-    font-size: 18px;
+    font-size: 15px;
     display: block;
 }
 
 .BestSellerItemName {
     color: var(--primary-color);
-    font-size: 18px;
+    font-size: 16px;
     display: block;
     transition: var(--transition);
     text-decoration: none;
@@ -288,11 +299,17 @@
     color: var(--white-color);
 }
 
+.BestSellerItemRating {
+    display: flex;
+    gap: 3px;
+}
+
 .lucide-star {
     stroke: var(--primary-color);
     height: 18px;
     width: 18px;
     transition: var(--transition);
+    cursor: pointer;
 }
 
 .ProductOrderButton {
@@ -328,7 +345,7 @@
 }
 
 .WeokSectionImageWrapper {
-    height: 150px
+    height: 150px;
 }
 
 .WrokSectionImage {
@@ -370,7 +387,6 @@
     border-radius: 50%;
 }
 
-
 .TextSectionItemImage {
     height: 70px;
     width: 70px;
@@ -380,14 +396,12 @@
 .TextSectionItemTextHeading {
     color: var(--primary-color);
     font-size: 20px;
-    display: block;
     font-weight: 600;
 }
 
 .TextSectionItemTextParagraph {
     color: var(--primary-color);
     font-size: 16px;
-    display: block;
 }
 
 .lucide-book,
@@ -397,7 +411,6 @@
     height: 36px;
     width: 36px;
 }
-
 
 /* Blog Section */
 
@@ -411,7 +424,6 @@
     border-radius: 8px;
     transition: var(--transition);
     padding: 10px;
-
 }
 
 .BlogImagesWrapper {
@@ -430,7 +442,6 @@
 .SubBlogTitle {
     color: var(--primary-color);
     font-size: 24px;
-    display: block;
     font-weight: 600;
 }
 
@@ -440,7 +451,6 @@
 .SubBlogDate {
     color: var(--primary-color);
     font-size: 18px;
-    display: block;
 }
 
 .BlogSectionItem {
@@ -491,13 +501,11 @@
 .LocationTextParagraph {
     color: var(--primary-color);
     font-size: 18px;
-    display: block;
 }
 
 .LocationTextSubHeading {
     color: var(--primary-color);
     font-size: 24px;
-    display: block;
     font-weight: 600;
 }
 
@@ -555,26 +563,23 @@
 }
 
 .User {
-    height: 75px;
-    width: 75px;
+    height: 60px;
+    width: 60px;
     object-fit: cover;
     border-radius: 50%;
 }
 
 .TestimonialName {
     color: var(--primary-color);
-    font-size: 24px;
-    display: block;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .TestimonialDate {
     color: var(--primary-color);
-    font-size: 18px;
-    display: block;
+    font-size: 16px;
+    margin-top: 5px;
 }
-
-
 
 .lucide-star-filled {
     height: 18px;
@@ -586,7 +591,6 @@
 .TestimonialParagraph {
     color: var(--primary-color);
     font-size: 18px;
-    display: block;
 }
 
 /* Newsletter */
@@ -598,7 +602,7 @@
 
 .NewsLetterHeading {
     color: var(--primary-color);
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .NewsLetterSpan {
@@ -606,28 +610,25 @@
     font-weight: 800;
 }
 
-.NewsLetterInput {
+.NewsLetterInput,
+.NewsLetterButton {
     height: 50px;
-    width: 400px;
-    border-radius: 8px;
     border: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.NewsLetterInput {
+    width: 400px;
     padding: 0px 20px;
-    font-size: 20px;
 }
 
 .NewsLetterButton {
-    height: 50px;
     width: 150px;
     background-color: var(--primary-color);
     color: var(--white-color);
-    border: none;
-    border-radius: 8px;
-    font-size: 20px;
     cursor: pointer;
 }
-
-
-
 
 /* Footer */
 
@@ -642,11 +643,9 @@
     object-fit: contain;
 }
 
-
 .FooterHeading {
     color: var(--primary-color);
-    font-size: 34px;
-    display: block;
+    font-size: 25px;
     font-weight: 200;
     margin-bottom: 20px;
 }
@@ -658,7 +657,7 @@
 .FooterLink {
     text-decoration: none;
     color: var(--secondary-color);
-    font-size: 18px;
+    font-size: 17px;
     display: block;
     margin-bottom: 10px;
     font-weight: 200;
@@ -671,17 +670,17 @@
 
 .SocialMediaLink {
     text-decoration: none;
+    width: 32px;
 }
 
 .lucide-facebook1,
 .lucide-instagram1,
 .lucide-youtube1 {
     color: var(--secondary-color);
-    height: 30px;
-    width: 40px;
+    height: 24px;
+    width: 24px;
     transition: var(--transition);
 }
-
 
 .SocialMediaLink:hover .lucide-facebook1,
 .SocialMediaLink:hover .lucide-instagram1,
@@ -695,6 +694,7 @@
     display: block;
     margin-bottom: 10px;
     font-weight: 200;
+    margin-top: 10px;
 }
 
 .FooterBottom {
@@ -704,9 +704,19 @@
 
 .FooterBottomText {
     color: var(--white-color);
-    font-size: 18px;
-    display: block;
+    font-size: 15px;
     font-weight: 200;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
+}
+
+.FooterText {
+    text-decoration: none;
+    transition: var(--transition);
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.FooterText:hover {
+    color: var(--accent-color);
 }
